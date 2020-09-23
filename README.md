@@ -34,6 +34,8 @@ SQL문 입력!
 
 4) application.propertis 추가하기
 위치 : src\main\resources\application.properties
+<details>
+ <summary> 코드보기 </summary>
 ```sh
 spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost/[    ]?serverTimezone=UTC
@@ -84,10 +86,8 @@ spring.servlet.multipart.max-request-size=215MB
 # file.upload-dir=/Users/multicampus/Documents/UPLOAD_FILES/Prolog
 file.upload-dir=/home/ubuntu/Documents/UPLOAD_FILES/Prolog
 
- 
-
- 
 
 server.servlet.context-path=/api
 
 ```
+</details>
