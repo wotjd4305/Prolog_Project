@@ -99,7 +99,7 @@ server.servlet.context-path=/api
  
  <details>
  <summary> 코드보기(setting.json) </summary>
- ```sh
+```sh
  
  {
 "java.home": "C:\\Program Files\\Java\\jdk-15",
@@ -118,8 +118,8 @@ server.servlet.context-path=/api
 "editor.suggestSelection": "first",
 "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
- </details>
- ```
+```
+</details>
 
 6) 서버 실행후 스웨거 확인하기!
 http://localhost:8080/api/swagger-ui.html
