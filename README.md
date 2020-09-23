@@ -36,6 +36,7 @@ SQL문 입력!
 위치 : src\main\resources\application.properties
 <details>
  <summary> 코드보기 </summary>
+ 
 ```sh
 spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost/[    ]?serverTimezone=UTC
