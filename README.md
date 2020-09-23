@@ -92,3 +92,34 @@ server.servlet.context-path=/api
 
 ```
 </details>
+
+5) Ctrl + Shift + F를 통해 검색창 열기
+ - java.home을 입력하고 setting.json으로 이동.
+ - 버전에 따라 다음과 같이 입력(나는 1.8과 15를 사용하고 있음, 경로는 사용자에 맞게)
+ 
+ <details>
+ <summary> 코드보기(setting.json) </summary>
+ ```sh
+ 
+ {
+"java.home": "C:\\Program Files\\Java\\jdk-15",
+"java.configuration.runtimes": [
+    {
+        "name": "JavaSE-1.8",
+        "path": "C:\\Program Files\\Java\\jdk1.8.0_261", // 기존 1.8 JDK SE
+      },
+      {
+        "name": "JavaSE-15",
+        "path": "C:\\Program Files\\Java\\jdk-15", // Open JDK 14 SE
+        "default": true
+      }
+],
+"java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\User\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
+ </details>
+ ```
+
+6) 서버 실행후 스웨거 확인하기!
+http://localhost:8080/api/swagger-ui.html
